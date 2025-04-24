@@ -1,0 +1,57 @@
+"use client"
+
+import { useEffect, useState } from "react"
+import { AnimatePresence } from "framer-motion"
+import Navbar from "@/components/navbar"
+import PageLoader from "@/components/page-loader"
+import Hero from "@/components/hero"
+import About from "@/components/about"
+import Services from "@/components/services"
+import Projects from "@/components/projects"
+import Skills from "@/components/skills"
+import Contact from "@/components/contact"
+import Footer from "@/components/footer"
+import BackgroundStars from "@/components/BackgroundStars"
+import MouseTrail from "@/components/MouseTrail"
+import PageTransition from "@/components/PageTransition"
+
+export default function Home() {
+  const [loading, setLoading] = useState(true)
+  const [isMounted, setIsMounted] = useState(false)
+
+  useEffect(() => {
+    setIsMounted(true)
+
+    const timer = setTimeout(() => {
+      setLoading(false)
+    }, 2000)
+
+    return () => clearTimeout(timer)
+  }, [])
+
+  if (!isMounted) return null
+
+  return (
+    <main className="min-h-screen bg-background transition-colors duration-300 relative overflow-hidden">
+      <BackgroundStars />
+      <MouseTrail />
+
+      <AnimatePresence mode="wait">
+        {loading ? (
+          <PageLoader key="loader" />
+        ) : (
+          <PageTransition>
+            <Navbar />
+            <Hero />
+            <About />
+            <Services />
+            <Projects />
+            <Skills />
+            <Contact />
+            <Footer />
+          </PageTransition>
+        )}
+      </AnimatePresence>
+    </main>
+  )
+}
