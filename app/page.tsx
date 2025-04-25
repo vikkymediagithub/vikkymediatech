@@ -9,6 +9,7 @@ import About from "@/components/about"
 import VideoIntro from '@/components/VideoIntro'
 import Services from "@/components/services"
 import Projects from "@/components/projects"
+import Testimonials from '@/components/Testimonials'
 import Skills from "@/components/skills"
 import Contact from "@/components/contact"
 import Footer from "@/components/footer"
@@ -49,6 +50,7 @@ export default function Home() {
             <Services />
             <VideoIntro />
             <Projects />
+            <Testimonials />
             <BehindTheBuild />
             <Skills />
             <Contact />
