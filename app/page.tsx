@@ -6,6 +6,7 @@ import Navbar from "@/components/navbar"
 import PageLoader from "@/components/page-loader"
 import Hero from "@/components/hero"
 import About from "@/components/about"
+import VideoIntro from '@/components/VideoIntro'
 import Services from "@/components/services"
 import Projects from "@/components/projects"
 import Skills from "@/components/skills"
@@ -14,6 +15,7 @@ import Footer from "@/components/footer"
 import BackgroundStars from "@/components/BackgroundStars"
 import MouseTrail from "@/components/MouseTrail"
 import PageTransition from "@/components/PageTransition"
+import BehindTheBuild from '@/components/BehindTheBuild'
 
 export default function Home() {
   const [loading, setLoading] = useState(true)
@@ -45,7 +47,9 @@ export default function Home() {
             <Hero />
             <About />
             <Services />
+            <VideoIntro />
             <Projects />
+            <BehindTheBuild />
             <Skills />
             <Contact />
             <Footer />
