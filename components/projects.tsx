@@ -42,10 +42,10 @@ export default function Projects() {
       title: "Portfolio Website",
       description:
         "A creative portfolio website for a photographer with image galleries, animations, and contact form.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/project-1.png",
       tags: ["React", "Framer Motion", "GSAP", "Netlify"],
-      liveUrl: "#",
-      githubUrl: "#",
+      liveUrl: "https://vikkymediatech.vercel.app/#home",
+      githubUrl: "https://github.com/vikkymediagithub/vikkymediatech.git",
     },
     {
       id: 3,
