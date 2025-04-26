@@ -6,6 +6,7 @@ import Navbar from "@/components/navbar"
 import PageLoader from "@/components/page-loader"
 import Hero from "@/components/hero"
 import About from "@/components/about"
+import MultilingualSupport from "@/components/MultilingualSupport"
 import VideoIntro from '@/components/VideoIntro'
 import Services from "@/components/services"
 import Projects from "@/components/projects"
@@ -51,6 +52,7 @@ export default function Home() {
             <Services />
             <VideoIntro />
             <Projects />
+            <MultilingualSupport />
             <Freebie
               consultationText="Book a free consultation with us to get personalized insights into your business needs and how we can help you grow your online presence."
               checklistLink="/downloads/startup-checklist.pdf"
