@@ -7,23 +7,23 @@ const testimonials = [
     name: 'Samuel Okwuosa',
     role: 'Frontend Developer',
     company: 'Creativize Tech',
-    image: '/client1.jpg',
-    review: "Victor is hands-down one of the best frontend developers I've worked with. His expertise made our site not only look great but perform flawlessly across devices.",
+    image: '/images/samuel.jpg',
+    review: "Samuel is hands-down one of the best frontend developers I've worked with. His expertise made our site not only look great but perform flawlessly across devices.",
     stars: 5,
   },
   {
     name: 'Linda Ruiz',
     role: 'Co-Founder',
     company: 'PixelSpark Creative Studio',
-    image: '/client2.jpg',
-    review: "Victor Joseph is incredibly talented. He consistently delivers pixel-perfect designs and smooth user experiences. I appreciate his eye for innovation.",
+    image: '/images/linda.jpg',
+    review: "Emmanuel is incredibly talented. He consistently delivers pixel-perfect designs and smooth user experiences. I appreciate his eye for innovation.",
     stars: 5,
   },
   {
     name: 'Michael Ade',
     role: 'CTO',
     company: 'NextGen Solutions',
-    image: '/client3.jpg',
+    image: '/images/michael.jpg',
     review: "Victor brought our tech dreams to life with so much excellence. I was amazed at the details, performance, and design quality he delivered.",
     stars: 5,
   },
@@ -31,7 +31,7 @@ const testimonials = [
     name: 'Sarah Bassey',
     role: 'Founder',
     company: 'DesignHut',
-    image: '/client4.jpg',
+    image: '/images/sarah.jpg',
     review: "Working with Victor was a dream! He understood our brand perfectly and delivered beyond expectations.",
     stars: 5,
   },
@@ -59,7 +59,8 @@ export default function Testimonials() {
             {[...testimonials, ...testimonials].map((item, idx) => (
               <motion.div
                 key={idx}
-                className="min-w-[400px] max-w-[400px] bg-zinc-900 p-8 rounded-2xl border border-zinc-700 shadow-xl flex-shrink-0"
+                whileHover={{ y: -10, scale: 1.05 }} // 💥 Lift on hover
+                className="min-w-[400px] max-w-[400px] bg-zinc-900 p-8 rounded-2xl border border-zinc-700 shadow-xl flex-shrink-0 cursor-pointer"
                 animate={{
                   y: [0, -10, 0, 10, 0],
                   rotate: [0, 1, 0, -1, 0],
