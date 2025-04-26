@@ -9,6 +9,7 @@ import About from "@/components/about"
 import VideoIntro from '@/components/VideoIntro'
 import Services from "@/components/services"
 import Projects from "@/components/projects"
+import Freebie from '../components/Freebie'
 import Testimonials from '@/components/Testimonials'
 import Skills from "@/components/skills"
 import Contact from "@/components/contact"
@@ -50,6 +51,13 @@ export default function Home() {
             <Services />
             <VideoIntro />
             <Projects />
+            <Freebie
+              consultationText="Book a free consultation with us to get personalized insights into your business needs and how we can help you grow your online presence."
+              checklistLink="/downloads/startup-checklist.pdf"
+              checklistText="A comprehensive checklist for startups needing a website. Download it now to make sure your website covers all the essentials!"
+              guideLink="/downloads/brand-design-guide.pdf"
+              guideText="A 1-page guide with tips on how to leverage your brand design for maximum impact. Perfect for entrepreneurs and small businesses."
+            />
             <Testimonials />
             <BehindTheBuild />
             <Skills />
