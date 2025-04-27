@@ -223,7 +223,7 @@ export default function Footer() {
 
         {/* Floating action button */}
         <motion.div
-          className="fixed bottom-6 right-6 z-50"
+          className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50"
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 1 }}
@@ -238,6 +238,7 @@ export default function Footer() {
             <ArrowRight className="h-5 w-5 rotate-[-90deg]" />
           </motion.a>
         </motion.div>
+
       </motion.div>
     </footer>
   )
