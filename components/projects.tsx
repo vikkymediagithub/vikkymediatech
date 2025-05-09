@@ -32,9 +32,9 @@ export default function Projects() {
       title: "E-Commerce Platform",
       description:
         "A modern e-commerce platform built with Next.js, featuring product filtering, cart functionality, and payment integration.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/project-2.png",
       tags: ["Next.js", "Tailwind CSS", "Stripe", "Supabase"],
-      liveUrl: "#",
+      liveUrl: "https://nova-ecommerce-store.vercel.app/",
       githubUrl: "#",
     },
     {
